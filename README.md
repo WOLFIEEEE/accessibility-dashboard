@@ -41,16 +41,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 This repository contains the source code for the **Accessibility Dashboard**, a project designed to track and manage accessibility issues across various projects within an organization. The dashboard provides a comprehensive view of the current status, previous status, and scheduled projects, along with detailed breakdowns of issues by severity and origin.
 
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Project Overview
 
 The **Accessibility Dashboard** aims to provide a centralized platform for tracking accessibility-related issues across multiple projects. The dashboard categorizes issues by severity (Low, Medium, High, Critical) and origin (Developer, Designer, etc.). It also includes project management features such as tracking project progress, start and end dates, hours spent, and team assignments.
