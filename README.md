@@ -53,3 +53,37 @@ The **Accessibility Dashboard** aims to provide a centralized platform for track
 - **Search Functionality:** Easily search through projects and issues.
 - **Team Management:** View teams and their assigned tasks within the dashboard.
 - **Accessibility COE Team Integration:** Submit requests and manage accessibility compliance through a centralized interface.
+
+[View the Accessibility Dashboard PDF](https://github.com/WOLFIEEEE/Dashboard-Design/blob/main/AccessibilityDashboard.pdf)
+
+## Overview
+The Accessibility Dashboard is a comprehensive tool for tracking accessibility-related projects, their progress, issues, and team assignments. It is organized into four primary pages:
+
+### 1. Main Accessibility Dashboard (Page 1)
+- **Purpose:** Provides an overarching view of all accessibility projects.
+- **Sections:**
+  - **Project Overview:** Names of active, previous, and scheduled projects, along with their current and previous statuses.
+  - **Project Metrics:** Percentage of completion and total issues identified for each project.
+  - **Issues Breakdown:** Distribution of issues by severity (Low, Medium, High, Critical).
+  - **Teams & Bug Origin:** Lists teams involved and categorizes the origin of bugs (e.g., Developer, Designer).
+  - **Actions:** Includes a search bar for navigation and a request submission option.
+
+### 2. Current Projects (Page 2)
+- **Purpose:** Focuses on projects that are currently in progress.
+- **Sections:**
+  - **Project Details:** Active projects with team/owner names, allocated hours, start and end dates, and current team members.
+  - **Ongoing Work:** Highlights the current activities for easy monitoring.
+  - **Additional Information:** References to previous and scheduled projects.
+
+### 3. Previous Projects (Page 3)
+- **Purpose:** Dedicated to projects that have been completed or are inactive.
+- **Sections:**
+  - **Project Overview:** Lists past projects with their final accessibility scores.
+  - **Accessibility Score:** Compliance score indicating adherence to accessibility standards.
+  - **Team Involvement:** Details on teams or individuals responsible for these projects.
+
+### 4. Scheduled Projects (Page 4)
+- **Purpose:** Provides an overview of projects planned for the future.
+- **Sections:**
+  - **Project Details:** Upcoming projects with expected hours, start dates, and current status (e.g., Added to the Queue, Estimation in Progress, Confirmation Pending).
+  - **Queue Status:** Displays readiness and scheduling details.
