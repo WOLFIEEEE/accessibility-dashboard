@@ -47,7 +47,7 @@ The **Accessibility Dashboard** aims to provide a centralized platform for track
 
 ## Features
 
-- **Project Management:** Track the progress of multiple projects with start/end dates, hours logged, and team members assigned.
+- **Project Management:** Track the progress of multiple projects with start/end dates, hours logged, and team members assigned to individual Project.
 - **Issue Tracking:** Categorize and manage accessibility issues by severity and origin.
 - **Dashboard View:** A comprehensive overview of current, completed, and scheduled projects.
 - **Search Functionality:** Easily search through projects and issues.
