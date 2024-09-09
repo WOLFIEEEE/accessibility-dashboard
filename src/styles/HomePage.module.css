@@ -28,6 +28,10 @@
   align-items: center;
 }
 
+.sidebarItem.active {
+  background-color: #f0f0f0; /* Change this to your desired highlight color */
+  font-weight: bold; /* Optional: make the text bold to highlight */
+}
 
 .searchBar {
   padding: 6px 15px;

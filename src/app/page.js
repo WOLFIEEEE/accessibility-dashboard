@@ -13,9 +13,16 @@ export default function HomePage() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('/data/my.json');
-      const result = await response.json();
-      setData(result);
+      try {
+        const response = await fetch('/data/my.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        console.error('Fetching data failed:', error);
+      }
     };
 
     fetchData();
