@@ -30,8 +30,6 @@
   background-color: #7AA66F;
 }
 
-
-
 .table {
   border-collapse: separate;
   border-spacing: 0;
@@ -56,9 +54,6 @@
   top: 0;
   z-index: 1;
 }
-
-
-
 
 .table tr:first-child td {
   border-top: 1px solid #7AA66F; /* Add top border for the first row */
