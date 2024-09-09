@@ -1,0 +1,213 @@
+{
+  "currentProjects": [
+    { 
+      "name": "Project A", 
+      "projectOwner": "Michael Johnson", 
+      "teamMembers": ["Sarah Brown", "Lucas Miller"], 
+      "startDate": "15 Jan 2024", 
+      "endDate": "15 Jul 2024",
+      "status": "30%", 
+      "totalhours": 120 
+    },
+    { 
+      "name": "Project B", 
+      "projectOwner": "Jessica Thompson",  
+      "teamMembers": ["Olivia White", "James Davis"], 
+      "startDate": "10 Feb 2024", 
+      "endDate": "20 Aug 2024",
+      "status": "45%", 
+      "totalhours": 180 
+    },
+    { 
+      "name": "Project C", 
+      "projectOwner": "William Harris",  
+      "teamMembers": ["Emma Wilson", "Ethan Anderson"], 
+      "startDate": "5 Mar 2024", 
+      "endDate": "25 Sep 2024",
+      "status": "60%", 
+      "totalhours": 220 
+    },
+    { 
+      "name": "Project D", 
+      "projectOwner": "Patricia Lewis", 
+      "teamMembers": ["Sophia Clark", "Benjamin Martinez"], 
+      "startDate": "1 Apr 2024", 
+      "endDate": "1 Oct 2024",
+      "status": "75%", 
+      "totalhours": 250 
+    },
+    { 
+      "name": "Project E", 
+      "projectOwner": "David Rodriguez",  
+      "teamMembers": ["Isabella Lee", "Alexander Gonzalez"], 
+      "startDate": "20 May 2024", 
+      "endDate": "20 Nov 2024",
+      "status": "50%", 
+      "totalhours": 200 
+    },
+    { 
+      "name": "Project F", 
+      "projectOwner": "Barbara Walker",  
+      "teamMembers": ["Mia Hernandez", "Matthew Hall"], 
+      "startDate": "10 Jun 2024", 
+      "endDate": "10 Dec 2024",
+      "status": "25%", 
+      "totalhours": 130 
+    },
+    { 
+      "name": "Project G", 
+      "projectOwner": "Christopher Young", 
+      "teamMembers": ["Charlotte King", "Jack Wright"], 
+      "startDate": "5 Jul 2024", 
+      "endDate": "5 Jan 2025",
+      "status": "35%", 
+      "totalhours": 170 
+    },
+    { 
+      "name": "Project H", 
+      "projectOwner": "Elizabeth Scott",  
+      "teamMembers": ["Amelia Green", "Daniel Adams"], 
+      "startDate": "15 Aug 2024", 
+      "endDate": "15 Feb 2025",
+      "status": "40%", 
+      "totalhours": 160 
+    },
+    { 
+      "name": "Project I", 
+      "projectOwner": "Anthony Baker",  
+      "teamMembers": ["Ava Hill", "Ryan Perez"], 
+      "startDate": "25 Sep 2024", 
+      "endDate": "25 Mar 2025",
+      "status": "20%", 
+      "totalhours": 110 
+    },
+    { 
+      "name": "Project J", 
+      "projectOwner": "Linda Roberts", 
+      "teamMembers": ["Harper Nelson", "Liam Carter"], 
+      "startDate": "5 Oct 2024", 
+      "endDate": "5 Apr 2025",
+      "status": "55%", 
+      "totalhours": 210 
+    },
+    { 
+      "name": "Project K", 
+      "projectOwner": "George Mitchell",  
+      "teamMembers": ["Mason Murphy", "Aiden Rivera"], 
+      "startDate": "20 Nov 2024", 
+      "endDate": "20 May 2025",
+      "status": "65%", 
+      "totalhours": 230 
+    },
+    { 
+      "name": "Project L", 
+      "projectOwner": "Donna Campbell",  
+      "teamMembers": ["Ella Phillips", "Jayden Torres"], 
+      "startDate": "10 Dec 2024", 
+      "endDate": "10 Jun 2025",
+      "status": "70%", 
+      "totalhours": 240 
+    },
+    { 
+      "name": "Project M", 
+      "projectOwner": "Kevin Parker", 
+      "teamMembers": ["Zoe Sanchez", "Logan Diaz"], 
+      "startDate": "1 Jan 2024", 
+      "endDate": "1 Jul 2024",
+      "status": "80%", 
+      "totalhours": 260 
+    },
+    { 
+      "name": "Project N", 
+      "projectOwner": "Susan Evans",  
+      "teamMembers": ["Riley Patterson", "Nathan Cooper"], 
+      "startDate": "25 Feb 2024", 
+      "endDate": "25 Aug 2024",
+      "status": "90%", 
+      "totalhours": 280 
+    },
+    { 
+      "name": "Project O", 
+      "projectOwner": "Gary Edwards",  
+      "teamMembers": ["Chloe Collins", "Sebastian Stewart"], 
+      "startDate": "15 Mar 2024", 
+      "endDate": "15 Sep 2024",
+      "status": "95%", 
+      "totalhours": 290 
+    }
+  ],
+
+
+  "previousProjects": [
+    { 
+      "name": "Project 1", 
+      "startDate": "2 Apr 2021", 
+      "status": "1065", 
+      "endDate": "2 Jan 2021", 
+      "totalhours": 200, 
+      "projectOwner": "Owner 1", 
+      "teamMembers": ["Member 1", "Member 2"], 
+      "totalIssuesData": 600,
+      "low" : 50,
+      "high" : 150,
+      "medium" : 200,
+      "critical" : 50,
+      "accessibilityScore": "40/100"
+    },
+    { 
+      "name": "Project 2", 
+      "startDate": "5 May 2023", 
+      "status": "106", 
+      "endDate": "5 Jan 2021", 
+      "totalhours": 300, 
+      "projectOwner": "Owner 2", 
+      "teamMembers": ["Member 3", "Member 4"], 
+      "totalIssuesData": 200,
+      "low" : 50,
+      "high" : 150,
+      "medium" : 200,
+      "critical" : 50,
+      "accessibilityScore": "32/100"
+    },
+    { 
+      "name": "Project 3", 
+      "startDate": "2 May 2020", 
+      "status": "247", 
+      "endDate": "4 Sep 2021", 
+      "totalhours": 150, 
+      "projectOwner": "Owner 3", 
+      "teamMembers": ["Member 5", "Member 6"], 
+      "totalIssuesData": 150 ,
+      "low" : 50,
+      "high" : 150,
+      "medium" : 200,
+      "critical" : 50,
+      "accessibilityScore": "34/100"
+    }
+  ],
+
+  "scheduledProjects": [
+    { 
+      "name": "Project 1", 
+      "projectOwner": "Owner 1", 
+      "expectedStartDate": "2 Apr 2021", 
+      "expectedHours": 200, 
+      "status": "Added to queue"
+    },
+    { 
+      "name": "Project 2", 
+      "projectOwner": "Owner 1", 
+      "expectedStartDate": "2 Apr 2021", 
+      "expectedHours": 200, 
+      "status": "Added to queue"
+    },
+    { 
+      "name": "Project 3", 
+      "projectOwner": "Owner 1", 
+      "expectedStartDate": "2 Apr 2021", 
+      "expectedHours": 200, 
+      "status": "Added to queue"
+    }
+     
+  ]
+}

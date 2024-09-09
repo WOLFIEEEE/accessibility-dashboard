@@ -1,35 +1,92 @@
 /* General Styles */
+
 .container {
     display: flex;
-    height: 100vh;
-    background-color: #181818;
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    background-color: #181818; /* No white background */
     color: #FFFFFF;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Sidebar Styles */
-  .sidebar {
-    width: 250px;
+    font-family: 'SF Pro', sans-serif;
+
+}
+
+
+.header h1 {
+  color: #4DCB43;      /* Sets the text color */
+  font-size: 24px;  /* Adjusts the font size */
+  text-align: left;
+  font-family: 'SF Pro', sans-serif;
+  padding-right: 16px;
+  padding-top: 2%;
+}
+
+.sidebarLink {
+  text-decoration: none;
+  color: inherit; /* Use the text color from the parent element */
+  display: flex;
+  align-items: center;
+}
+
+
+.searchBar {
+  padding: 6px 15px;
+  font-size: 16px;
+  border: 1px solid #7AA66F; 
+  border-radius: 25px;
+  width: 200px; /* Set width for the search bar */
+  background-color: #181818;
+  color: #7AA66F;
+}
+
+.searchBar:focus {
+  outline: none;
+  border-color: #4DCB43; /* Change border color on focus */
+}
+
+.searchBar::placeholder {
+  color: #4DCB43; /* Set placeholder text color to red */
+}
+
+
+/* Sidebar Styles */
+.sidebar {
+    width: 300px;
     background-color: #1c1c1c;
     padding: 20px;
     display: flex;
     flex-direction: column;
-  }
-  
-  .sidebarTitle {
+}
+
+.logo {
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-right: 16px;
+    width: 100px;
+    height: 30px;
+}
+
+.sidebarTitle {
     font-size: 24px;
-    color: #00FF00;
+    color: #4DCB43;
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .sidebarList {
+}
+
+.icon {
+    padding-right: 16px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.sidebarList {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .sidebarItem {
+}
+
+.sidebarItem {
     margin-bottom: 15px;
     font-size: 18px;
     padding: 10px;
@@ -37,117 +94,159 @@
     cursor: pointer;
     color: #FFFFFF;
     transition: background-color 0.3s ease;
-  }
-  
-  .sidebarItem:hover, 
-  .sidebarItem.active {
-    background-color: #00FF00;
+}
+
+.sidebarItem:hover, 
+.sidebarItem.active {
+    background-color: #205d20;
     color: #000000;
-  }
-  
-  /* Content Area Styles */
-  .content {
-    flex-grow: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #00FF00;
-  }
-  
+}
+
+/* Overall Page Layout */
+.content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  overflow: hidden; /* Prevent page scrolling */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  grid-row: 1 / 2;
+  margin-bottom: 10px; /* Space between header and main content */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Main Content (Status Tables) */
+.main {
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+/* Status Table Styles */
+.currentStatus,
+.previousStatus {
+  width: 48%;
+  background-color: #282828;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #4DCB43;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 90%; /* Set a maximum height to prevent overflow */
+  overflow-y: auto; /* Enable scrolling within the table if content overflows */
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #4DCB43;
+  color: #FFFFFF;
+}
+
+.table th {
+  background-color: #1c1c1c;
+  color: #4DCB43;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #4DCB43;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #3DAA37;
+}
+
+/* Footer (Chart Area) Styles */
+.footer {
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: auto; /* Allow height to adjust based on content */
+  padding-top: 10px;
+}
+
+.chartContainer {
+  width: 32%;
+  background-color: #282828;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #4DCB43;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: calc(100% - 40px); /* Adjust height to fit within the available space */
+}
+
+.chartContainer h3 {
+  margin-bottom: 10px;
+  color: #4DCB43;
+}
+
+.chartContainer > canvas {
+  width: 50% !important; /* Force the chart to fill the container */
+  height: 50% !important; /* Force the chart to fill the container */
+}
+
+/* Icons */
+.sidebarItem:before {
+  background-image: ''; /* Placeholder icon */
+  margin-right: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .main {
-    display: flex;
-    justify-content: space-between;
-    height: 70%; /* 70% of the page height */
-    gap: 20px; /* Add space between table containers */
-  }
-  
-  /* Status Table Styles */
-  .currentStatus,
-  .previousStatus {
-    width: 48%;
-    background-color: #282828;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #00FF00;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding-right: 10px;
+    padding-bottom: 10px;
   }
-  
-  .table {
-    width: 100%;
-    border-collapse: collapse;
+
+
+  .previousStatus {
+    width: 100%; /* Tables take full width on smaller screens */
     margin-bottom: 20px;
   }
-  
-  .table th,
-  .table td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #00FF00;
-    color: #FFFFFF;
-  }
-  
-  .table th {
-    background-color: #1c1c1c;
-    color: #00FF00;
-  }
-  
-  .button {
-    padding: 10px 20px;
-    background-color: #00FF00;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    display: block;
-  }
-  
-  .button:hover {
-    background-color: #009900;
-  }
-  
-  /* Footer (Chart Area) Styles */
+
+
   .footer {
-    display: flex;
-    justify-content: space-between;
-    height: 30%; /* 30% of the page height */
-    gap: 20px; /* Add space between chart containers */
+    flex-direction: column; /* Stack charts vertically on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    gap: 15px;
   }
-  
+
   .chartContainer {
-    width: 32%; /* Allow three charts in a row with equal width */
-    background-color: #282828;
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid #00FF00;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%; /* Chart containers take full width on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
   }
-  
-  .chartContainer h3 {
-    margin-bottom: 10px;
-    color: #00FF00;
-  }
-  
-  /* Icons */
-  .sidebarItem:before {
-    content: '🔹'; /* Placeholder icon */
-    margin-right: 10px;
-  }
-  
-  .chartContainer:before {
-    content: '📊'; /* Placeholder icon for charts */
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
+}
