@@ -21,8 +21,14 @@ export default function StatusTable({ title, data, isCurrent }) {
             </tr>
           ))}
         </tbody>
+        <tfoot>
+          <tr>
+            <td colSpan="3" className={styles.tableFooter}>
+              <button className={styles.button}>See all</button>
+            </td>
+          </tr>
+        </tfoot>
       </table>
-      <button className={styles.button}>See all</button>
     </div>
   );
 }

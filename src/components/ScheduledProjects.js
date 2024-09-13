@@ -2,7 +2,7 @@ import styles from '../styles/CurrentStatus.module.css';
 
 export default function CurrentStatus({ title, data, isCurrent }) {
   return (
-    <div>
+    <div className={styles.currentStatus}>
       <h2>{title}</h2>
       <table className={styles.table}>
         <thead>

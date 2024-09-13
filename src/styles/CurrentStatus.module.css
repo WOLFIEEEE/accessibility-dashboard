@@ -1,7 +1,6 @@
-/* Status Table Styles */
 .currentStatus {
   width: 100%;
-  padding: 15px;
+  padding: 20px; /* Adjust padding for equal spacing around the table */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -10,10 +9,11 @@
   overflow-y: auto; /* Enable scrolling within the table if content overflows */
   box-sizing: border-box;
   margin-bottom: 40px;
-  
+  background-color: #202020; /* Background color for the table container */
 }
+
 .toggleButton {
-  background-color: #181818;
+  background-color: #202020;
   color: white;
   padding: 10px;
   border: none;
@@ -31,20 +31,22 @@
 }
 
 .table {
+  width: 100%; /* Ensure the table takes up the full width */
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 10px; /* Add the desired border radius */
   overflow: hidden; /* Ensure the radius applies to the borders */
-  border: 2px solid #4DCB43;
+  border: 2px solid #4DCB43; /* Add a solid border around the table */
+  margin: 0; /* Remove default margin */
 }
 
 .table th,
 .table td {
-  padding: 10px;
+  padding: 12px; /* Increased padding for better spacing */
   text-align: center;
   border-bottom: 1px solid #7AA66F;
-  border-left: 1px solid #7AA66F; /* Add this line for the left border */
-  border-right: 1px solid #7AA66F; /* Add this line for the right border */
+  border-left: 1px solid #7AA66F;
+  border-right: 1px solid #7AA66F;
   color: #FFFFFF;
 }
 
@@ -53,6 +55,7 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  background-color: #202020; /* Background color for the table header */
 }
 
 .table tr:first-child td {
@@ -65,4 +68,13 @@
 
 .table tr td:last-child {
   border-right: none; /* Remove right border for the last cell in each row */
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; /* Adjust for smaller screen sizes */
+  }
 }
